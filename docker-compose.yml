@@ -1,10 +1,11 @@
 version: '3.1'
 
 services:
-  bstreet:
-    build:
-      context: .
-      dockerfile: Dockerfile
+
+  www-bstreet:
+    container_name: www-bstreet
+    image: www-bstreet
+    build: .
     ports:
         - "3000:3000"
     networks:
